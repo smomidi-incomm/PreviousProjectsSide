@@ -1,0 +1,407 @@
+{
+  "id": "fb4c931d-cfe4-453e-ba0c-6bcfc0743e11",
+  "version": "2.0",
+  "name": "AutomationWMSLogin",
+  "url": "http://sdwmsweb01v:8080",
+  "tests": [{
+    "id": "8ee93495-e33b-48a6-89ca-da6a03ed9b63",
+    "name": "AllLinksVerification",
+    "commands": [{
+      "id": "02c9a2f3-d5b9-49a2-964c-019b17a1c8c1",
+      "comment": "",
+      "command": "open",
+      "target": "/wms-tam/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53323f5c-2468-454d-b696-2f2152d20149",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1027",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d96322dc-f1eb-4f89-8cd6-91157d14c134",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cdfa530-83aa-41cf-a570-823b9ae2c267",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "smomidi"
+    }, {
+      "id": "3a6f2f39-1783-46cd-af84-5ddcc7ab5e96",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "SnehaLovesIncomm123~"
+    }, {
+      "id": "3c5920c6-d776-43db-b3be-773b4d4ce9bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cce3593-0372-432b-adec-2c4224c3e9ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=adminLink",
+      "targets": [
+        ["id=adminLink", "id"],
+        ["linkText=Admin", "linkText"],
+        ["css=#adminLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//a[@id='adminLink']", "xpath:attributes"],
+        ["xpath=//a[@href='http://sdwmsweb01v.unx.incommtech.net:8080/wms-tam-admin']", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c35072c9-e357-4787-8ae3-c283aa7ed60a",
+      "comment": "",
+      "command": "click",
+      "target": "id=locationAdminArea",
+      "targets": [
+        ["id=locationAdminArea", "id"],
+        ["linkText=Location", "linkText"],
+        ["css=#locationAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Location')]", "xpath:link"],
+        ["xpath=//a[@id='locationAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/locationAdmin')]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ada18a5-3048-4397-b8a4-6e0ad3ac4f4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=merchantAdminArea",
+      "targets": [
+        ["id=merchantAdminArea", "id"],
+        ["linkText=Merchant", "linkText"],
+        ["css=#merchantAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Merchant')]", "xpath:link"],
+        ["xpath=//a[@id='merchantAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/merchantAdmin')]", "xpath:href"],
+        ["xpath=//span[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Merchant')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e067dc9c-b337-43da-bfa8-728b97c4d4c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=merchantItemAllocationAdminArea",
+      "targets": [
+        ["id=merchantItemAllocationAdminArea", "id"],
+        ["linkText=Merchant·Item·Allocation", "linkText"],
+        ["css=#merchantItemAllocationAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Merchant·Item·Allocation')]", "xpath:link"],
+        ["xpath=//a[@id='merchantItemAllocationAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/miaAdmin')]", "xpath:href"],
+        ["xpath=//span[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Merchant·Item·Allocation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2bee390-7bb7-48b1-a1b1-d56e20771878",
+      "comment": "",
+      "command": "click",
+      "target": "id=productAdminArea",
+      "targets": [
+        ["id=productAdminArea", "id"],
+        ["linkText=Product", "linkText"],
+        ["css=#productAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Product')]", "xpath:link"],
+        ["xpath=//a[@id='productAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/productAdmin')]", "xpath:href"],
+        ["xpath=//span[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3d010c0-0841-4669-9d12-e1f6a8afe8d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=vendorAdminArea",
+      "targets": [
+        ["id=vendorAdminArea", "id"],
+        ["linkText=Vendor", "linkText"],
+        ["css=#vendorAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Vendor')]", "xpath:link"],
+        ["xpath=//a[@id='vendorAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/vendorAdmin')]", "xpath:href"],
+        ["xpath=//span[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vendor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43663469-733a-4fcc-9d9a-f489ae4537f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=purchaseOrderAdminArea",
+      "targets": [
+        ["id=purchaseOrderAdminArea", "id"],
+        ["linkText=Purchase Order", "linkText"],
+        ["css=#purchaseOrderAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Purchase Order')]", "xpath:link"],
+        ["xpath=//a[@id='purchaseOrderAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/purchaseOrderAdmin')]", "xpath:href"],
+        ["xpath=//span[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Purchase Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a0ddef-fe5b-4bb3-bdf5-ee98733ec6a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "54af001f-8a4b-4f4f-8cab-5869764a87cf",
+    "name": "AllLinksVerification_duplicate",
+    "commands": [{
+      "id": "dd690452-ec72-49f2-9861-4cc13964e1d1",
+      "comment": "",
+      "command": "open",
+      "target": "/wms-tam/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2f0ae2c-725e-4e8e-bcf6-39e772efc653",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1027",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f0dbba7-900c-4070-814d-2120ff1ae9c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "367587c6-a095-4064-9f58-8a5745061b26",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "smomidi"
+    }, {
+      "id": "e5246b42-ff59-43ed-96ed-dfbcf6dc62cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "SnehaLovesIncomm123~"
+    }, {
+      "id": "2e0f6e09-c7da-4839-a14f-bbdf7cb59030",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5d05381-cfb5-458e-8a02-bdca3ea80fd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=adminLink",
+      "targets": [
+        ["id=adminLink", "id"],
+        ["linkText=Admin", "linkText"],
+        ["css=#adminLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//a[@id='adminLink']", "xpath:attributes"],
+        ["xpath=//a[@href='http://sdwmsweb01v.unx.incommtech.net:8080/wms-tam-admin']", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1fc36ad-a7c9-4c6f-94ec-02484b9023cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=locationAdminArea",
+      "targets": [
+        ["id=locationAdminArea", "id"],
+        ["linkText=Location", "linkText"],
+        ["css=#locationAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Location')]", "xpath:link"],
+        ["xpath=//a[@id='locationAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/locationAdmin')]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ddc805c-1374-482b-8fa2-437d7d562e03",
+      "comment": "",
+      "command": "click",
+      "target": "id=merchantAdminArea",
+      "targets": [
+        ["id=merchantAdminArea", "id"],
+        ["linkText=Merchant", "linkText"],
+        ["css=#merchantAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Merchant')]", "xpath:link"],
+        ["xpath=//a[@id='merchantAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/merchantAdmin')]", "xpath:href"],
+        ["xpath=//span[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Merchant')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa70a57-d80b-4f7b-b8d5-5b2a626e039e",
+      "comment": "",
+      "command": "click",
+      "target": "id=merchantItemAllocationAdminArea",
+      "targets": [
+        ["id=merchantItemAllocationAdminArea", "id"],
+        ["linkText=Merchant·Item·Allocation", "linkText"],
+        ["css=#merchantItemAllocationAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Merchant·Item·Allocation')]", "xpath:link"],
+        ["xpath=//a[@id='merchantItemAllocationAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/miaAdmin')]", "xpath:href"],
+        ["xpath=//span[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Merchant·Item·Allocation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df73dd2e-228e-4410-ac3e-fc52b25ba5ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=productAdminArea",
+      "targets": [
+        ["id=productAdminArea", "id"],
+        ["linkText=Product", "linkText"],
+        ["css=#productAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Product')]", "xpath:link"],
+        ["xpath=//a[@id='productAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/productAdmin')]", "xpath:href"],
+        ["xpath=//span[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bdc5024-c19d-42ec-bb05-4edb57d1f744",
+      "comment": "",
+      "command": "click",
+      "target": "id=vendorAdminArea",
+      "targets": [
+        ["id=vendorAdminArea", "id"],
+        ["linkText=Vendor", "linkText"],
+        ["css=#vendorAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Vendor')]", "xpath:link"],
+        ["xpath=//a[@id='vendorAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/vendorAdmin')]", "xpath:href"],
+        ["xpath=//span[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vendor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d542e9cb-c7cd-4b2e-ac21-89851a4c0bb9",
+      "comment": "",
+      "command": "click",
+      "target": "id=purchaseOrderAdminArea",
+      "targets": [
+        ["id=purchaseOrderAdminArea", "id"],
+        ["linkText=Purchase Order", "linkText"],
+        ["css=#purchaseOrderAdminArea", "css:finder"],
+        ["xpath=//a[contains(text(),'Purchase Order')]", "xpath:link"],
+        ["xpath=//a[@id='purchaseOrderAdminArea']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#!/purchaseOrderAdmin')]", "xpath:href"],
+        ["xpath=//span[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Purchase Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "357c724f-0d12-4c95-b44b-76486b86e3c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a7cd78bd-72be-459b-acd9-c5b1df888159",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": true,
+    "timeout": 300,
+    "tests": ["8ee93495-e33b-48a6-89ca-da6a03ed9b63", "54af001f-8a4b-4f4f-8cab-5869764a87cf"]
+  }],
+  "urls": ["http://sdwmsweb01v:8080/"],
+  "plugins": []
+}

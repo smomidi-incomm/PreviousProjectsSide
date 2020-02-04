@@ -1,0 +1,261 @@
+{
+  "id": "fa14ed06-840e-4450-9934-b082dfae55e3",
+  "version": "2.0",
+  "name": "WMSProject",
+  "url": "http://sdwmsweb01v:8080",
+  "tests": [{
+    "id": "0efb8487-a7d6-43a3-b1ed-1608bb8b23e4",
+    "name": "TC1WMSSignin",
+    "commands": [{
+      "id": "2df43986-e6e8-4d1d-bfb8-61029785a692",
+      "comment": "",
+      "command": "open",
+      "target": "/wms-tam/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9fced8f-c648-4e01-a417-73a108131f33",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1919x1039",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8c40de9-1bda-4f3b-aa82-0e5f00aabd53",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.md-toolbar-tools > .user-select-none",
+      "targets": [
+        ["css=.md-toolbar-tools > .user-select-none", "css:finder"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'WMS-TAM Login')]", "xpath:innerText"]
+      ],
+      "value": "WMS-TAM Login"
+    }, {
+      "id": "4c56a586-5c92-4fac-a1e5-d3d85f42607c",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f800accc-fc63-49c9-b4ff-55d12caf021b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row-centered:nth-child(3)",
+      "targets": [
+        ["css=.row-centered:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47bb16c0-ae5f-4ea8-a615-310aa4a6a8a5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": "LOGIN"
+    }, {
+      "id": "8223109f-8e4f-4d4d-82bd-3bd109fd04d9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.md-toolbar-tools > .user-select-none",
+      "targets": [
+        ["css=.md-toolbar-tools > .user-select-none", "css:finder"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'WMS-TAM Login')]", "xpath:innerText"]
+      ],
+      "value": "WMS-TAM Login"
+    }, {
+      "id": "963d791d-11c4-4d33-a18d-c28a0e6b2f65",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "WMS-TAM Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32ad5e1b-0556-4151-8b59-d4fc819ae29b",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f629569-d5aa-4a45-ab12-ee55fd63e604",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "smomidi"
+    }, {
+      "id": "f416f1ff-8d6f-48ef-ba5a-f6c57c04ed1c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "SnehaLovesIncomm123~"
+    }, {
+      "id": "d1be0ce0-08a0-4322-837d-397de147bfd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginFormWrapper']/div/div[3]/form/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d545ef-ea3c-4602-961d-a22ab892be49",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.md-whiteframe-10dp:nth-child(6) .md-fab",
+      "targets": [
+        ["css=.md-whiteframe-10dp:nth-child(6) .md-fab", "css:finder"],
+        ["xpath=(//a[@href='http://sdwmsweb01v.unx.incommtech.net:8080/wms-tam-programming'])[2]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3100d4b-aed5-4be6-8aff-c645b570bc17",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.md-whiteframe-10dp:nth-child(6) .md-fab",
+      "targets": [
+        ["css=.md-whiteframe-10dp:nth-child(6) .md-fab", "css:finder"],
+        ["xpath=(//a[@href='http://sdwmsweb01v.unx.incommtech.net:8080/wms-tam-programming'])[2]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e980aa67-9b8c-4263-a8cb-75e5016e6c88",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-sign-out",
+      "targets": [
+        ["css=.fa-sign-out", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61d68b15-109c-40e8-9ae7-4b8972168e27",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.fa-sign-out",
+      "targets": [
+        ["css=.fa-sign-out", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3caf5357-04ea-4e53-9922-ee1476d7a663",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.md-whiteframe-10dp:nth-child(7) .ng-scope",
+      "targets": [
+        ["css=.md-whiteframe-10dp:nth-child(7) .ng-scope", "css:finder"],
+        ["xpath=//div[7]/div/a/md-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8367e1a1-0a48-4c93-bab3-11eb094ce423",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.md-whiteframe-10dp:nth-child(7) .ng-scope",
+      "targets": [
+        ["css=.md-whiteframe-10dp:nth-child(7) .ng-scope", "css:finder"],
+        ["xpath=//div[7]/div/a/md-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9abcc91c-1c87-4b1d-9753-e98e5bbdd6a2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'WMS - Menu selection')]", "xpath:innerText"]
+      ],
+      "value": "WMS - Menu selection"
+    }, {
+      "id": "1e022af6-432a-4bae-af10-fe9ba6276bb3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a > span",
+      "targets": [
+        ["css=a > span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "278150a9-fe1c-47ee-acba-5318c9181318",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=a > span",
+      "targets": [
+        ["css=a > span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88eabe24-9f1e-4a37-968b-51dc74708e4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-sign-out",
+      "targets": [
+        ["css=.fa-sign-out", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b51af6cc-2591-4c62-a8b0-4f5be3558432",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0efb8487-a7d6-43a3-b1ed-1608bb8b23e4"]
+  }],
+  "urls": ["http://sdwmsweb01v:8080/"],
+  "plugins": []
+}
